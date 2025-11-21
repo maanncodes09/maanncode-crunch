@@ -1,0 +1,27 @@
+package Methos_Function.java;
+
+import java.util.Scanner;
+
+public class metPrime {
+
+    public static boolean isPrime(int m){
+        if(m<=1)return false;
+            for(int i=2; i<m/2; i++){
+                if(m%i==0)
+                    return false;
+            }
+            return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(isPrime(n)){
+            System.out.println("Prime Number");
+        }
+        else{
+            System.out.println("Not Prime Number");
+        }
+
+    }
+}
